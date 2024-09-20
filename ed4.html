@@ -1,0 +1,469 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>EnduranceRunningCompetitiveRunning</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+
+	
+		<style type="text/css">
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			/* CSS------------------------------------------------------------- */
+			
+			body{
+				font-family: "Roboto", sans-serif;
+				color: black;
+				font-size: 120%;
+			}
+			#top-page{
+				font-family: "Teko", sans-serif;
+				background-color: #f5f4ef;
+			}
+			h1{
+				font-size: 5em;
+				margin: 0 1%;
+			}
+			.author{
+				margin: -10px 0 5px 1%;
+			}
+			h2{
+				color: #FD8E01;
+				font-size: 2em;
+			}
+			h3{
+				color: #C99F00;
+				font-size: 1.2em;
+				margin-top: 50px;
+			}
+			nav{
+				font-size: 150%;
+			}
+			  
+			#navcontainer ul{
+				padding-left: 0;
+				margin-left: 0; 
+				background-color: #F9C26B;
+				color: White;
+				float: left;
+				width: 100%;
+				font-weight: lighter;
+			}
+			#navcontainer ul li { display: inline; }
+			#navcontainer ul li a{
+				padding: 0.2em 1em;
+				background-color: #F9C26B;
+				color: #2B737C;
+				float: left;
+				border-right: 1px solid #fff;
+			}
+			#navcontainer ul li a:hover{
+				color: white;
+			}
+			#navcontainer ul li a#current{
+				background-color: #D2A459;
+			}
+			
+			#content{
+				width: 80%;
+				margin: 100px auto;
+			}
+			
+			main{
+				float: left;
+				width: 48%;
+				padding: 3%;
+				border-right: 1px solid lightgrey;
+			}
+			aside{
+				float: left;
+				width: 38%;
+				padding: 3%;
+			}
+			aside>article{
+				margin: auto;
+			}
+			article{
+				margin: 50px auto;
+			}
+			p{
+				line-height: 1.5;
+				margin-top: 30px;
+			}
+			
+			#link{
+				color: #2B737C;
+			}
+			#link:hover{
+				color: #FD8E01;
+			}
+			blockquote{
+				font-size: 1.5em;
+				font-style: italic;
+				margin: auto;
+			}
+			
+			blockquote:before{
+				content: "\201C";
+			}
+			
+			blockquote:after{
+				content: "\201D";
+			}
+			
+			figure{
+				width: 100%;
+				margin: 0px auto 30px auto;
+			}
+			figure>img{
+				width: 100%;
+				margin: auto;
+			}
+			figcaption{
+			}
+			table{
+				margin-top: 70px;
+				border-collapse: separate;
+				border-spacing: 1px;
+				color: #2d8e51;
+				background-color: grey;
+				border: 2px solid #FD8E01;
+				width: 100%;
+			}
+			.tabletitle{
+				font-size: 1.2em;
+			}
+			th{
+				background-color: #f5f4ef;
+				color: #FD8E01;
+				padding: 3px;
+				font-weight: bold;
+			}
+			td{
+				font-size: 0.8em;
+				background-color: #f5f4ef;
+				color: black;
+				padding: 3px;
+			}
+			footer{
+				clear: left;
+				background-color: #F9C26B;
+			}
+			footer>p, footer>ul{
+				color: #2B737C;
+				margin: 5px;
+			}
+			footer>ul>li{
+				display: inline;
+			}
+			
+		</style>
+		
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
+		"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+
+	<div id="top-page">
+		<header>
+			<h1>Endurance Running: Competitive Running</h1>
+			<h2 class="author">Created by Andrew Westphal</h2>
+		</header>
+
+		<nav>
+			<div id="navcontainer">
+				<ul id="navlist">
+					<li><a href="index.html">Overview</a></li>
+					<li><a href="ed2.html">Tips For Beginners</a></li>
+					<li><a href="ed3.html">Health Benefits</a></li>
+					<li id="active"><a href="ed4.html" id="current">Competitive Running</a></li>
+					<li><a href="ed5.html">Nutrition Tips</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="content">
+		<main>
+			<figure>
+				<img src="edmar.jpg"/>
+				<figcaption>source: <a id="link" href="https://www.pexels.com/photo/photo-of-two-men-running-near-the-crowd-2719565/">pexels.com</a></figcaption>
+			</figure>
+			<blockquote>The athletes need to find the right balance between speed and endurance to come out on top.</blockquote>
+			<article>
+				<h2>Competitive Running</h2>
+				<p>
+					Competitive endurance running comes in a great amount of variety, and can range from a few laps on a track field, to running a whole marathon. 
+					In each race, the athletes are challenged to see who can run the fastest for the longest amount of time. 
+					The athletes need to find the right balance between speed and endurance to come out on top. 
+					Running too fast will cause a greater depletion of energy while running too slow will cause the athlete to fall behind. 
+					Competing in a running race is a difficult challenge and can take many years of training to even compete in some of the longest runs.
+				</p>
+			</article>
+		</main>
+		<aside>
+			<table>
+				<thead>
+					<tr>
+						<th class="tabletitle" colspan="5">Marathon Record Holders - Top 25 - Male</th>
+					</tr>
+					<tr>
+						<th>Rank</th>
+						<th>Mark</th>
+						<th>Competitor</th>
+						<th>Nat</th>
+						<th>Date</th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="5">source: <a id="link" href="https://worldathletics.org/records/all-time-toplists/road-running/marathon/all/men/senior?regionType=world&page=1&bestResultsOnly=false&firstDay=1899-12-31&lastDay=2024-09-19&maxResultsByCountry=all&eventId=10229634&ageCategory=senior">worldathletics.org</a></td>
+					</tr>
+				</tfoot>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>2:00:35</td>
+						<td>Kelvin Kiptum</td>
+						<td>KEN</td>
+						<td>08 OCT 2023</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>2:01:09	</td>
+						<td>Eliud Kipchoge</td>
+						<td>KEN</td>
+						<td>25 SEP 2022</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>2:01:25</td>
+						<td>Kelvin Kiptum</td>
+						<td>KEN</td>
+						<td>23 APR 2023</td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>2:01:39	</td>
+						<td>Eliud Kipchoge</td>
+						<td>KEN</td>
+						<td>16 SEP 2018</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>2:01:41	</td>
+						<td>Kenenisa Bekele</td>
+						<td>ETH</td>
+						<td>29 SEP 2019</td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>2:01:48</td>
+						<td>Sisay Lemma</td>
+						<td>ETH</td>
+						<td>03 DEC 2023</td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>2:01:53</td>
+						<td>Kelvin Kiptum</td>
+						<td>KEN</td>
+						<td>04 DEC 2022</td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>2:02:16</td>
+						<td>Benson Kipruto</td>
+						<td>KEN</td>
+						<td>03 MAR 2024</td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>2:02:37	</td>
+						<td>Eliud Kipchoge</td>
+						<td>KEN</td>
+						<td>28 APR 2019</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>2:02:40	</td>
+						<td>Eliud Kipchoge</td>
+						<td>KEN</td>
+						<td>06 MAR 2022</td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>2:02:42</td>
+						<td>Eliud Kipchoge</td>
+						<td>KEN</td>
+						<td>24 SEP 2023</td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>2:02:48</td>
+						<td>Birhanu Legese</td>
+						<td>ETH</td>
+						<td>29 SEP 2019</td>
+					</tr>
+					<tr>
+						<td rowspan="2">13</td>
+						<td>2:02:55</td>
+						<td>Mosinet Geremew</td>
+						<td>ETH</td>
+						<td>28 APR 2019</td>
+					</tr>
+					<tr>
+						<td>2:02:55</td>
+						<td>Timothy Kiplagat</td>
+						<td>KEN</td>
+						<td>03 MAR 2024</td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>2:02:57</td>
+						<td>Dennis Kimetto</td>
+						<td>KEN</td>
+						<td>28 SEP 2014</td>
+					</tr>
+					<tr>
+						<td rowspan="2">16</td>
+						<td>2:03:00</td>
+						<td>Evans Chebet</td>
+						<td>KEN</td>
+						<td>06 DEC 2020</td>
+					</tr>
+					<tr>
+						<td>2:03:00</td>
+						<td>Gabrial Gerald Geay</td>
+						<td>TAN</td>
+						<td>04 DEC 2022</td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>2:03:03</td>
+						<td>Kenenisa Bekele</td>
+						<td>ETH</td>
+						<td>25 SEP 2016</td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>2:03:04</td>
+						<td>Lawrence Cherono</td>
+						<td>KEN</td>
+						<td>06 DEC 2020</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>2:03:05</td>
+						<td>Eliud Kipchoge</td>
+						<td>KEN</td>
+						<td>24 APR 2016</td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>2:03:11</td>
+						<td>Alexander Munyao</td>
+						<td>KEN</td>
+						<td>03 DEC 2023</td>
+					</tr>
+					<tr>
+						<td rowspan="4">22</td>
+						<td>2:03:13</td>
+						<td>Emmanual Mutai</td>
+						<td>KEN</td>
+						<td>28 SEP 2014	</td>
+					</tr>
+					<tr>
+						<td>2:03:13</td>
+						<td>Wilson Kipsang Kiprotich</td>
+						<td>KEN</td>
+						<td>25 SEP 2016</td>
+					</tr>
+					<tr>
+						<td>2:03:13</td>
+						<td>Amos Kipruto</td>
+						<td>KEN</td>
+						<td>06 MAR 2022</td>
+					</tr>
+					<tr>
+						<td>2:03:13</td>
+						<td>Vincent Kipkemoi Ngetich</td>
+						<td>KEN</td>
+						<td>24 SEP 2023	</td>
+					</tr>
+				</tbody>
+			</table>
+		</aside>
+	</div>
+
+	
+	<footer>
+		<ul>
+			<li>Sources:</li>
+			<li><a id="link" href="https://www.pexels.com/photo/photo-of-two-men-running-near-the-crowd-2719565/">pexels.com</a></li>
+			<li><a id="link" href="https://worldathletics.org/records/all-time-toplists/road-running/marathon/all/men/senior?regionType=world&page=1&bestResultsOnly=false&firstDay=1899-12-31&lastDay=2024-09-19&maxResultsByCountry=all&eventId=10229634&ageCategory=senior">worldathletics.org</a></li>
+		</ul>
+		<p>Copyright - Westphal 2024 - Created for Educational Purposes</p>
+	</footer>
+		
+</body>
+
+</html>

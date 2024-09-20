@@ -1,0 +1,347 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<title>EnduranceRunningHomePage</title>
+	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Teko:wght@300..700&display=swap" rel="stylesheet">
+
+
+	
+		<style type="text/css">
+			/* http://meyerweb.com/eric/tools/css/reset/ 
+			   v2.0 | 20110126
+			   License: none (public domain)
+			*/
+
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+			
+			/* CSS------------------------------------------------------------- */
+			
+			body{
+				font-family: "Roboto", sans-serif;
+				color: black;
+				font-size: 120%;
+			}
+			#top-page{
+				font-family: "Teko", sans-serif;
+				background-color: #f5f4ef;
+			}
+			h1{
+				font-size: 5em;
+				margin: 0 1%;
+			}
+			.author{
+				margin: -10px 0 5px 1%;
+			}
+			h2{
+				color: #FD8E01;
+				font-size: 2em;
+			}
+			nav{
+				font-size: 150%;
+			}
+			  
+			#navcontainer ul{
+				padding-left: 0;
+				margin: 0; 
+				background-color: #F9C26B;
+				color: White;
+				float: left;
+				width: 100%;
+				font-weight: lighter;
+			}
+			#navcontainer ul li { display: inline; }
+			#navcontainer ul li a{
+				padding: 0.2em 1em;
+				background-color: #F9C26B;
+				color: #2B737C;
+				float: left;
+				border-right: 1px solid #fff;
+			}
+			#navcontainer ul li a:hover{
+				color: white;
+			}
+			#navcontainer ul li a#current{
+				background-color: #D2A459;
+			}
+			
+			#content{
+				width: 80%;
+				margin: 100px auto;
+			}
+			
+			main{
+				float: left;
+				width: 69%;
+				padding-right: 2%;
+				border-right: 1px solid lightgrey;
+			}
+			
+			aside{
+				float: left;
+				width: 26%;
+				padding-left: 2%;
+			}
+			aside>article{
+				margin: auto;
+			}
+			article{
+				margin: 50px auto;
+			}
+			p{
+				line-height: 1.5;
+				margin: 30px 0;
+			}
+			
+			#link{
+				color: #2B737C;
+			}
+			#link:hover{
+				color: #FD8E01;
+			}
+			blockquote{
+				font-size: 1.5em;
+				font-style: italic;
+				margin-bottom: 40px;
+			}
+			
+			blockquote:before{
+				content: "\201C";
+			}
+			
+			blockquote:after{
+				content: "\201D";
+			}
+			
+			figure{
+				width: 100%;
+				margin-bottom: 30px;
+			}
+			figure>img{
+				width: 100%;
+				margin: auto;
+			}
+			figcaption{
+			}
+			
+			ul{
+				color: #2B737C;
+				list-style-type: disc;
+				margin: 20px 7%;
+			}
+			ol{
+				color: #2B737C;
+				list-style-type: normal;
+				margin: 20px 7%;
+			}
+			ol>ul{
+				color: black;
+				font-size: 0.9em;
+				list-style-type: square;
+				margin: 10px 10%;
+				line-height: 1.2;
+			}
+			ol>ul>ul{
+				color: black;
+				font-size: 0.9em;
+				list-style-type: square;
+				margin: 10px 10%;
+				line-height: 1.2;
+			}
+			footer{
+				clear: left;
+				background-color: #F9C26B;
+			}
+			footer>p, footer>ul{
+				color: #2B737C;
+				margin: 5px;
+			}
+			footer>ul>li{
+				display: inline;
+			}
+			
+		</style>
+		
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js
+		"></script>
+	<![endif]-->
+	
+</head>
+
+<body>
+
+	<div id="top-page">
+		<header>
+			<h1>Endurance Running</h1>
+			<h2 class="author">Created by Andrew Westphal</h2>
+		</header>
+
+		<nav>
+			<div id="navcontainer">
+				<ul id="navlist">
+					<li id="active"><a href="index.html" id="current">Overview</a></li>
+					<li><a href="ed2.html">Tips For Beginners</a></li>
+					<li><a href="ed3.html">Health Benefits</a></li>
+					<li><a href="ed4.html">Competitive Running</a></li>
+					<li><a href="ed5.html">Nutrition Tips</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div id="content">
+		<main>
+			<figure>
+				<img src="sunsetrun.jpg"/>
+				<figcaption>source: <a id="link" href="https://www.pexels.com/photo/silhouette-of-boy-running-in-body-of-water-during-sunset-694587/">pexels.com</a></figcaption>
+			</figure>
+			<blockquote>There are many different reasons why running can be beneficial to everyone, especially to those who are most willing.</blockquote>
+			<article>
+				<h2>Endurance Running</h2>
+				<p>
+					Endurance running is an athletic activity in which someone runs for an extensive amount of 
+					time, intending to challenge the body with continuous movement. Running is a very difficult 
+					activity as it is very depriving of energy and requires mental discipline. Running is a crucial part 
+					of athleticism because it increases the body’s ability to maintain its energy for longer periods of 
+					time and to recover faster from energy deprivation. Besides being an athletic sport, running is 
+					still a great activity for anyone trying to improve their physical health, and potentially improve 
+					their qualtiy of life. There are many different reasons why running can be beneficial to everyone, 
+					especially to those who are most willing.
+				</p>
+			</article>
+			<article>
+				<h2>Why Start?</h2>
+				<p>
+					"Endurance running is as physical as it is mental. 
+					A workout of the muscles and the mind that tests our limits over hours and miles. 
+					And like most challenges, long-distance running can come with great rewards, no matter your pace or personal best. 
+					Done right — with adequate nutrient intake, attentive recovery and any necessary medical clearance — endurance running has the potential to change
+					your mind and body from the cell level up, making your heart function better, transforming your muscles and improving your memory." - 
+					<a id="link" href="https://www.abbott.com/corpnewsroom/nutrition-health-and-wellness/5-benefits-of-endurance-running-you-should-know.html">abbott.com</a>
+				</p>
+			</article>
+		</main>
+		<aside>
+			<article>
+				<h2>Site Contents:</h2>
+				<ol>
+					<li><a id="link" href="index.html">Overview</a></li>
+					<ul>
+						<li>Endurance Running</li>
+						<li>Why Start?</li>
+					</ul>
+					<li><a id="link" href="ed2.html">Tips For Beginners</a></li>
+					<ul>
+						<li>Equipment and Preparation</li>
+						<ul>
+							<li>Running Shoes</li>
+							<li>Timers and Trackers</li>
+							<li>Proper Clothing</li>
+						</ul>
+						<li>Pre / Post-Running Routines</li>
+						<ul>
+							<li>Stretching</li>
+							<li>Warm-ups / Cool-Downs</li>
+							<li>Hydration</li>
+						</ul>
+						<li>Building Habits</li>
+						<ul>
+							<li>Having a Running Plan</li>
+							<li>Group Running</li>
+							<li>Creating Goals</li>
+						</ul>
+					</ul>
+					<li><a id="link" href="ed3.html">Health Benefits</a></li>
+					<ul>
+						<li>Physical Health Benefits</li>
+						<ul>
+							<li>Cardio Health</li>
+							<li>Quality Sleep</li>
+							<li>Bone Health</li>
+						</ul>
+						<li>Mental Health Benefits</li>
+						<ul>
+							<li>Brainpower</li>
+							<li>Mood Improvement</li>
+							<li>Drepression Reduction</li>
+						</ul>
+					</ul>
+					<li><a id="link" href="ed4.html">Competitive Running</a></li>
+					<ul>
+						<li>Competitive Running</li>
+						<li>Marathon Record Holders - Top 25 - Male (Table)</li>
+					</ul>
+					<li><a id="link" href="ed5.html">Nutrition Tips</a></li>
+					<ul>
+						<li>Carbohydrates</li>
+						<li>Protein</li>
+						<li>Hydration</li>
+						<li>7-Day Meal Plan for Runners</li>
+					</ul>
+				</ol>
+			</article>
+		</aside>
+	</div>
+
+	
+	<footer>
+		<ul>
+			<li>Sources:</li>
+			<li><a id="link" href="https://www.pexels.com/photo/silhouette-of-boy-running-in-body-of-water-during-sunset-694587/">www.pexels.com</a></figcaption></li>
+			<li><a id="link" href="https://www.abbott.com/corpnewsroom/nutrition-health-and-wellness/5-benefits-of-endurance-running-you-should-know.html">www.abbott.com</a></li>
+		</ul>
+		<p>Copyright - Westphal 2024 - Created for Educational Purposes</p>
+	</footer>
+		
+</body>
+
+</html>
